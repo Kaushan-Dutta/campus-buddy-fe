@@ -20,7 +20,7 @@ type SocketProviderProps = {
 };
 
 export const SocketProvider: React.FC<SocketProviderProps> = ({ children }) => {
-  const socket = useMemo(() => io("https://campus-buddy-be.vercel.app/"), []);
+  const socket = useMemo(() => io("http://localhost:8080/"), []);
   const value: SocketContextType = {
     socket,
   };
