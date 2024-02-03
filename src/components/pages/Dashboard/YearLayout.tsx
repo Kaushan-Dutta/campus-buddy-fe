@@ -7,7 +7,13 @@ import './style.scss'
 import AddYear from '../../popups/AddYear';
 
 type Year={
-    _id:string
+  course:String,
+  courseId:String,
+  _id:String,
+  collegeId:String,
+  event:string,
+  description:string,
+  date:string
 }
 const YearLayout = () => {
   const {user}=userData();

@@ -8,8 +8,13 @@ import AddCourse from "../../popups/AddCourse";
 import AddStudent from "../../popups/AddStudent";
 
 type Course = {
-  _id: string;
-  course: string;
+  course:String,
+  courseId:String,
+  _id:String,
+  collegeId:String,
+  event:string,
+  description:string,
+  date:string
 };
 const CourseLayout = () => {
   const { user } = userData();

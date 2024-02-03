@@ -4,7 +4,7 @@ import "./style.scss";
 import { Link } from 'react-router-dom';
 import { userData } from "../../context/AuthContext";
 
-type Element={
+export type Element={
   course:String,
   courseId:String,
   _id:String,
