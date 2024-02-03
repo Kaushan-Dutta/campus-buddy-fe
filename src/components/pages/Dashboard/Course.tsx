@@ -89,15 +89,15 @@ const Course = () => {
   }, []);
 
   return (
-    <div>
+    <div className="w-full">
       <div className="course-nav">
         {CourseNav.map((item, index) => (
           <div
             key={index}
             onClick={() => setCurrentTab(item)}
             className={`course-nav-item ${
-              currentTab.name === item.name ? "active font-extrabold" : ""
-            }`}
+              currentTab.name === item.name ? "active-nav-item" : ""
+            } `}
           >
             {item.name}
           </div>
