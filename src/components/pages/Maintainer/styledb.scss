@@ -1,0 +1,57 @@
+.colleges-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .college{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 70%;
+       height: 100px;
+       padding: 20px;
+       margin-bottom: 20px;
+       border-radius: 20px;
+       box-shadow: 0 5px 15px rgba(233, 126, 255, 0.252);
+       .logo-email{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            img{
+                margin-right: 30px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                max-width: 50%;
+            }
+       }
+       .approved{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            border: 2.5px solid green;
+            color: green;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 30px;
+            margin-right: 1em;
+        }
+        .view-btn{
+            border: 2.5px solid blueviolet;
+            color: blueviolet;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s ease;
+        }
+        .view-btn:hover{
+            color: white;
+            background-color: rgb(166, 85, 241);
+        }
+       }
+    }
+}

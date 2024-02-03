@@ -1,0 +1,85 @@
+.each-course{
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:95%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    .sub-total{
+        display: flex;
+        align-items: center;
+    }
+    .sub-icon, .arrow-icon{
+        border: 2px solid darkblue;
+        border-radius: 50%;
+        width:50px;
+        height: 50px;
+        text-align: center;
+        padding-top: 12px;
+        font-size: 24px;
+        margin-right: 10px;
+        color: darkblue;
+    }
+    .arrow-icon{
+        //background-color: ;
+        margin-right: 0;
+        border: none;
+        cursor: pointer;
+        color: darkblue;
+    }
+    .subject{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .sub-name{
+            font-size: 20px;
+            font-weight: 500;
+            margin: 5px 0 8px;
+        }
+        .sub-code{
+            font-size: 14px;
+            font-weight: 400;
+            
+
+        }
+    }
+}
+.each-course:hover{
+    width: 100%;
+    background-color: rgb(232, 232, 232);
+    border: none;
+    box-shadow: 0 5px 10px rgba(109, 109, 109, 0.318);
+}
+
+.courses {
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(214, 136, 251, 0.353);
+    padding: 20px;
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 28px;
+            span{
+                color: blueviolet;
+                font-size: 36px;
+            }
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+    }
+}

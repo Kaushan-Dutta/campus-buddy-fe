@@ -1,0 +1,85 @@
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 600px;
+    // max-width: 60vw;
+    // max-height: 100vh;
+    padding: 20px;
+    border: 4px solid rgba(137, 43, 226, 0.493);
+    border-radius: 20px;
+    .modal-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10px 20px;
+        .modal-subheader{
+            color: blueviolet;
+        }
+        .close-button{
+            padding: 3px 3px 1px;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: white;
+            color: rgb(159, 78, 235);
+            border-radius: 5px;
+            border: 2px solid rgb(159, 78, 235);
+            cursor: pointer;
+        }
+        .close-button:hover{
+            background-color: rgb(159, 78, 235);
+            color: white;
+        }
+    }
+    .modal-forms{
+        padding: 20px;
+        .label{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .input-space{
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 8px;
+            margin: 15px auto;
+        }
+    }
+    .modal-footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 30px auto 10px;
+        .modal-buttons{
+            padding: 13px 18px;
+            margin-left: 20px;
+            border-radius: 8px;
+            background-color: white;
+            color: rgb(159, 78, 235);
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            border: 3px solid rgba(137, 43, 226, 0.493);
+            transition: 0.3s ease;
+        }
+        .modal-buttons:hover{
+            background-color: rgb(159, 78, 235);
+            color: white;
+            border-color: rgb(159, 78, 235);
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(41, 40, 40, 0.383);
+}

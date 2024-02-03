@@ -1,0 +1,44 @@
+.college-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .college-requests{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        width: 55%;
+        padding: 25px;
+        border-radius: 20px;
+        border: 2px solid rgb(109, 184, 249);
+        box-shadow: 0 5px 15px rgba(109, 184, 249, 0.413) ;
+        .item-head{
+            font-size: 18px;
+            font-weight: 600;
+            color: blueviolet;
+            padding-right: 10px;
+        }
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        .approve-btn{
+            border: 2.5px solid green;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            color: green;
+            border-radius: 30px;
+            margin: 30px;
+        }
+        .reject-btn{
+            border: 2.5px solid red;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            color: red;
+            border-radius: 30px;
+            margin: 30px;
+        }
+    }
+}

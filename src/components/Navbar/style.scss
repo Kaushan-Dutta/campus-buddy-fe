@@ -1,0 +1,41 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    border-radius: 20px;
+    //border: 1.5px solid gray;
+    box-shadow: 0 5px 15px rgba(233, 126, 255, 0.252)  ;
+    position: sticky;
+    
+
+    .right-side{
+        display: flex;
+        align-items: center;
+        margin: 0.75rem 2rem;
+        .username{
+            margin-right: 2rem;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 1rem;
+            border-radius: 30px;
+            border: 3px solid rgb(82, 65, 209);
+            color: rgb(82, 65, 209);
+        }
+        .logout{
+            font-size: 18px;
+            font-weight: 600;
+            padding: 1rem;
+            border-radius: 30px;
+            border: 3px solid rgb(189, 63, 227);
+            color: rgb(195, 98, 225);
+            background-color: white;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+        .logout:hover{
+            background-color: rgb(195, 98, 225);
+            color: white;
+        }
+    }
+}

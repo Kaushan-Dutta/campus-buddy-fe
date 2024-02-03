@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Work+Sans:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-container{
+    @apply px-[5vw] py-[2vh] ;
+}
+.flx-col{
+    @apply flex flex-col;
+}
+.flx-row{
+    @apply flex flex-row justify-between space-x-5
+}
+.primary-btn{
+    @apply bg-secondary rounded-md shadow-lg  text-center py-1 font-mons
+}
+.other-options{
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px ;
+    border-radius: 30px;
+    border: 3px solid rgb(94, 119, 247);
+    color: rgb(94, 119, 247);
+    background-color: white;
+    margin: 0.5rem auto;
+    transition: 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+.other-options:hover{
+    box-shadow: 0 5px 10px rgba(94, 120, 247, 0.566) ;
+    background-color: rgb(94, 119, 247);
+    color: white;
+}
+.popup-window{
+    @apply w-screen h-screen px-5 md:px-0  bg-light bg-opacity-10 fixed z-30 justify-center items-center flex flex-row top-0 left-0 
+  }

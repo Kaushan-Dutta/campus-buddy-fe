@@ -1,0 +1,32 @@
+.notify{
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(94, 120, 247, 0.437)  ;
+    padding: 0;
+    .heading{
+        font-size: 24px;
+        font-weight: 600;
+        color: mediumblue;
+        border-bottom: 1px solid;
+        padding: 20px;
+        text-align: center;
+    }
+    .notices{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        .notice{
+            padding: 15px 5px 15px 10px;
+            border-top: 1px solid;
+            transition: 0.3s ease;
+            .notice-name{
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        .notice:hover{
+            background-color: rgba(239, 236, 236, 0.798);
+            cursor: pointer;
+        }
+    }
+}
