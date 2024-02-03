@@ -23,6 +23,9 @@ import CourseLayout from './src/components/pages/Dashboard/CourseLayout';
 import Course from './src/components/pages/Dashboard/Course';
 
 import Profile from './src/components/pages/Profile/Profile';
+
+import RoomPage from './src/components/pages/Course/JoinRoom';
+
 export const Navroutes = [
     {
         path:'login',
@@ -165,6 +168,13 @@ export const Navroutes = [
         element:<Profile/>,
         entity:['admin','student','teacher'],
         onSideBar:true
+    },
+    {
+        path:'room/:id',
+        name:'Room Space',
+        element:<RoomPage/>,
+        entity:['student','teacher'],
+        
     },
     {
         path:'',
