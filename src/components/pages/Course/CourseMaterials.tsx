@@ -6,11 +6,12 @@ const CourseMaterials:React.FC = ({course}:any) => {
   const {user}=userData();
   const [popup,setPopup]=useState<boolean>(false);
   return (
-    <div>
+    <div className='materials'>
+      <h1 className="resourse-heading">Resources</h1>
         {course?.materials.map((material:any) => (
-            <div key={material.id}>
-                <h1>{material?.topic}</h1>
-                <a href={material?.url} target="_blank" rel="noreferrer">{material.url}</a>
+            <div key={material.id} className='topics'>
+                <h1 className='topic'><span>Topic:</span> {material?.topic}</h1>
+                <a href={material?.url} target="_blank" rel="noreferrer" className='material-link'>Click here to get the material</a>
             </div>
         ))}
         {user?.entity=='teacher' && <button className="other-options w-[200px]" onClick={()=>setPopup(true)}>Add Material</button>}

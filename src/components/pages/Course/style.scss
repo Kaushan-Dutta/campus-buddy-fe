@@ -38,3 +38,39 @@
         width: 90%;
     }
 }
+
+//course materials
+.materials{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    .resourse-heading{
+        font-size: 26px;
+        font-weight: 600;
+        color: blueviolet;
+        margin-top: 50px;
+    }
+    .topics{
+        box-shadow: 0 5px 15px rgba(91, 91, 91, 0.337);
+        margin: 20px auto;
+        padding: 20px;
+        width:90%;
+        border-radius: 15px;
+        span{
+            font-size: 18px;
+            font-weight: 600;
+            color: blueviolet;
+        }
+        .topic{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .material-link{
+            color: rgb(79, 131, 243);
+            text-decoration: underline;
+        }
+        .material-link:visited{
+            color:blueviolet
+        }
+    }
+}
