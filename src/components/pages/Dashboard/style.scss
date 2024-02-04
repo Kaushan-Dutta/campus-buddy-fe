@@ -83,3 +83,32 @@
 
     }
 }
+
+//course.tsx
+.course-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #00203FFF;
+    border-radius: 20px;
+    padding: 5px 5px;
+    transition: 1s ease;
+    .course-nav-item{
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    .course-nav-item:hover{
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .active-nav-item{
+        background-color:  blueviolet;
+        padding: 10px 20px;
+        border-radius: 15px;
+        color: white;
+        font-size: 18px !important; 
+        font-weight: 600;
+        margin: 0px;
+    }
+}

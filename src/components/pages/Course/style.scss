@@ -1,0 +1,117 @@
+//course details
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .course{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+        border: 2px solid blueviolet;
+        box-shadow: 0 5px 15px rgba(137, 43, 226, 0.325);
+        margin: 20px auto;
+        width: 90%;
+        span{
+            margin: 30px;
+        }
+    }
+    .teacher-heading{
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(21, 100, 165);
+        margin-top: 20px;
+        border-bottom: 3px dashed rgb(139, 0, 109);
+    }
+    .teacher{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 20px;
+        box-shadow: 0 5px 15px rgba(100, 99, 99, 0.316);
+        color: blueviolet;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 20px auto;
+        border-radius: 20px;
+        width: 90%;
+    }
+}
+
+//course materials
+.materials{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    .resourse-heading{
+        font-size: 26px;
+        font-weight: 600;
+        color: blueviolet;
+        margin-top: 50px;
+    }
+    .topics{
+        box-shadow: 0 5px 15px rgba(91, 91, 91, 0.337);
+        margin: 20px auto;
+        padding: 20px;
+        width:90%;
+        border-radius: 15px;
+        span{
+            font-size: 18px;
+            font-weight: 600;
+            color: blueviolet;
+        }
+        .topic{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .material-link{
+            color: rgb(79, 131, 243);
+            text-decoration: underline;
+        }
+        .material-link:visited{
+            color:blueviolet
+        }
+    }
+}
+
+
+//course session
+.session{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .session-heading{
+        margin-top: 50px;
+        font-size: 26px;
+        font-weight: 600;
+        color: blueviolet;
+    }
+    .session-form{
+        padding: 20px;
+        border: 3px solid blueviolet;
+        box-shadow: 0 5px 15px rgba(137, 43, 226, 0.297);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .label{
+            font-size: 18px;
+            font-weight: 600;
+            color: blueviolet;
+        }
+        .input{
+            border: 2px solid;
+        }
+        .join-btn{
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            background-color: blueviolet;
+        }
+        .join-btn:hover{
+            box-shadow: 0 4px 12px rgba(99, 99, 99, 0.252);
+        }
+    }
+}
