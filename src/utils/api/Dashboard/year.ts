@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import {gql,useQuery,useMutation} from '@apollo/client'
 import {userData} from '../../../context/AuthContext'
+import toast from 'react-hot-toast';
 
 const _years=gql`
  query GetYears($collegeId:String!){
@@ -64,10 +65,15 @@ export const year = () => {
             }
         })
         console.log(createYear);
+        toast.success("Year Created");
         setLoading(false);
     }
     catch(err){
         console.log(err);
+        toast.error("Error creating");
+    }
+    finally{
+      window.location.reload();
     }
   }
   return (

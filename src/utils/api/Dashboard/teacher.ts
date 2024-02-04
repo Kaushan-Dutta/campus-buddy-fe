@@ -1,6 +1,7 @@
 import React, { useState,useCallback } from 'react'
 import {  gql,useQuery,useMutation } from '@apollo/client';
 import { userData } from '../../../context/AuthContext';
+import toast from 'react-hot-toast';
 
 const _addTeacher=gql`
   mutation RegisterMutaion($email:String!,$phone:String!,$entity:String!,$collegeId:String,$details:MemberInputType){
@@ -104,11 +105,16 @@ export const teacher = () => {
             }
         })
         console.log(createTeacher);
+        toast.success("Teacher Created");
         setLoading(false);
         
     }
     catch(err){
         console.log(err);
+        toast.error(" Error Creating");
+    }
+    finally{
+        window.location.reload();
     }
   }
   const fetchTeacher=async(courseId:string)=>{
@@ -141,10 +147,15 @@ export const teacher = () => {
             }
         })
         console.log(uploadMaterialData);
+        toast.success("Material Uploaded");
         setLoading(false);
     }
     catch(err){
         console.log(err);
+        toast.error("Error Uploading");
+    }
+    finally{
+        window.location.reload();
     }
  },[url,topic])
   return (

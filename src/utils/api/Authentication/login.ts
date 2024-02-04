@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import {  gql,useQuery } from '@apollo/client';
-
+import toast from 'react-hot-toast';
 const _login=gql`
   query LoginQuery($_id: String!, $password: String!) {
   LoginQuery(_id: $_id, password: $password) {
@@ -41,11 +41,15 @@ export const Login = () => {
           password:password
         })
         localStorage.setItem('campus',login.data.LoginQuery.accessToken);
+        toast.success("Logged In")
         setLoading(false);
-        window.location.href='/';
     }
     catch(err){
       console.log(err);
+      toast.error("Invalid Credentials")
+    }
+    finally{
+      window.location.href='/';
     }
   }
   return (

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {  gql,useMutation } from '@apollo/client';
+import toast from 'react-hot-toast';
 
 const _registerCollege=gql`
   mutation RegisterCollege($email:String!,$phone:String!,$website:String!,$address:String!,$documentProof:String!,$name:String!){
@@ -74,10 +75,12 @@ export const Register = () => {
           documentProof:"https://drivelink.gdrive"
         }
       })
-      console.log("College Form",data); 
+      console.log("College Form",data);
+      toast.success("Form Submitted"); 
       setLoading(false);
     } catch (err) {
       console.log(err);
+      toast.error("Form Submission Failed");
     }
   };
   return { registerForm, registerSubmit, loading,documentProof, setDocumentProof };
