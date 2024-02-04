@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import {  gql,useQuery,useMutation } from '@apollo/client';
+import toast from 'react-hot-toast';
 
 const _getColleges=gql`
     query GetColleges{
@@ -76,9 +77,13 @@ export const CollegeCreation = () => {
     }})
     console.log(createUser);
     setLoading(false);
+    toast.success("College Approved");
+    window.location.reload();
     }
     catch(err){
       console.log(err);
+      toast.error("Error Occured");
+
     }
   }
   

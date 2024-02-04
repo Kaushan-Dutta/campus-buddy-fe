@@ -1,6 +1,7 @@
 import React,{useCallback, useState} from 'react'
 import {gql,useMutation,useQuery} from '@apollo/client'
 import { userData } from '../../../context/AuthContext'
+import toast from 'react-hot-toast'
 
 const _notifications=gql`
     query GetEvents($collegeId:String!){
@@ -113,10 +114,15 @@ export const notification = () => {
         })
         console.log(createEvent);
         setLoading(false);
+        toast.success('Event Created');
       }
       catch(err){
         console.log(err);
         setLoading(false);
+        toast.error('Error Creating');
+      }
+      finally{
+        window.location.reload();
       }
   },[
     event,description,image,date

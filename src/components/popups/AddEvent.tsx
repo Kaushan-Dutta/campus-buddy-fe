@@ -22,7 +22,7 @@ const AddNotification: React.FC<NotificationType> = ({ setPopup }) => {
         <form className="modal-forms" onSubmit={ createNotification} >
           {eventForm.map((item, id) => (
             <div className='' key={id}>
-                <label htmlFor="cname" className='label'>{item.name}</label><br/>
+                <label  className='label'>{item.name}</label><br/>
                 <input {...item} className='input-space'/>
             </div>
           ))}

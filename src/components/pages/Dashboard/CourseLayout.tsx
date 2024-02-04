@@ -56,6 +56,7 @@ const CourseLayout = () => {
       )}
 
       {addStudent && <AddStudent setAddStudent={setAddStudent} />}
+      {addCourse && <AddCourse setAddCourse={setAddCourse} />}
     </div>
   );
 };

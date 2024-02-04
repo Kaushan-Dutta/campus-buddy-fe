@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {  gql,useQuery,useMutation } from '@apollo/client';
 import { userData } from '../../../context/AuthContext';
+import toast from 'react-hot-toast';
 
 const _addCourse=gql`
     mutation AddCourse($course:String!,$collegeId:String!,$yearId:String!,$_id:String!){
@@ -102,10 +103,15 @@ export const course = () => {
             }
         })
         console.log(createCourse);
+        toast.success("Course Created")
         setLoading(false);
     }
     catch(err){
         console.log(err);
+        toast.error("Error creating");
+    }
+    finally{
+        window.location.reload();
     }
   }
 
