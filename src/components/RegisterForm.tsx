@@ -1,6 +1,7 @@
 import React from 'react'
 import {Register as useRegister} from '../utils/api/Authentication/register';
 import Loader from './Loader';
+import { PiStudentBold } from "react-icons/pi";
 
 const Register:React.FC = () => {
   const {registerForm,registerSubmit,loading,documentProof, setDocumentProof} = useRegister();
@@ -10,8 +11,8 @@ const Register:React.FC = () => {
   return (
     <div className=''>
         <div className=' max-w-96  p-5 rounded-xl shadow-lg bg-white mx-auto '>
-          <div className='text-center'>
-            <img src="" alt="logo"/>
+          <div className='text-left'>
+          <div className='text-5xl flex flex-row justify-center'><PiStudentBold /></div>
             <h1 className='font-mons '>register to the website</h1>
           </div>
           <form onSubmit={registerSubmit}>

@@ -11,7 +11,8 @@ export default {
       },
       fontFamily: {
         mons:['Montserrat', 'sans-serif'],
-        sans:['Work Sans', 'sans-serif']
+        sans:['Work Sans', 'sans-serif'],
+        poor:['Poor Story', 'system-ui']
       },
     },
   },

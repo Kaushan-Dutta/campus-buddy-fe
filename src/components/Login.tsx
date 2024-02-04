@@ -2,19 +2,20 @@ import React from 'react'
 import {Login as useLogin} from '../utils/api/Authentication/login';
 import Loader from './Loader'
 import { Link } from 'react-router-dom';
+import { PiStudentBold } from "react-icons/pi";
 
 const Login:React.FC = () => {
   const {loginForm,loginSubmit,loading} = useLogin();
-
+  
   if(loading){
     return <Loader/>
   }
   return (
     <div className=''>
         <div className='max-w-96 h-96 p-5 rounded-xl shadow-lg bg-white mx-auto '>
-          <div className='text-center'>
-            <img src="" alt="logo"/>
-            <h1 className='font-mons '>login to the website</h1>
+          <div className='text-center '>
+          <div className='text-5xl flex flex-row justify-center'><PiStudentBold /></div>
+                      <h1 className='font-mons '>login to the website</h1>
           </div>
           <form onSubmit={loginSubmit} className=''>
               {loginForm.map((item:any)=>(

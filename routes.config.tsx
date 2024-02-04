@@ -25,7 +25,7 @@ import Course from './src/components/pages/Dashboard/Course';
 import Profile from './src/components/pages/Profile/Profile';
 
 import RoomPage from './src/components/pages/Course/JoinRoom';
-
+import Schedule from './src/components/pages/Schedule/Schedule';
 export const Navroutes = [
     {
         path:'login',
@@ -165,7 +165,7 @@ export const Navroutes = [
     {
         path:'schedule',
         name:'Schedule',
-        element:<Profile/>,
+        element:<Schedule/>,
         entity:['admin','student','teacher'],
         onSideBar:true
     },

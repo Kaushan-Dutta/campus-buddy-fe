@@ -3,6 +3,8 @@ import { userData } from '../../context/AuthContext'
 import "./style.scss";
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import Logo from '../../assets/logo-no-background.png';
+import { PiStudentBold } from "react-icons/pi";
 
 const Navbar:React.FC = () => {
   const {user}=userData();
@@ -21,7 +23,9 @@ const Navbar:React.FC = () => {
   return (
 
         <div className="navbar bg-white ">
-          <Link to="/" className='mx-[0.9rem] my-[2rem]'>LOGO</Link>
+          <Link to="/" className='mx-[0.9rem] my-[2rem] flex flex-row items-center justify-between font-poor text-3xl'>
+            <PiStudentBold/>&nbsp;&nbsp;Campus Buddy
+          </Link>
           <div className="right-side">
             {user &&<span className="username cursor-pointer" onClick={()=>{
                 navigate(`/${user?.entity}/${user?._id}`)
