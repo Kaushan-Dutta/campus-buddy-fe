@@ -39,26 +39,28 @@ const CourseSession: React.FC = () => {
   }, [socket, handleJoinRoom]);
 
   return (
-    <div>
-      <h1>Lobby</h1>
-      <form onSubmit={handleSubmitForm}>
-        <label htmlFor="email">Email ID</label>
+    <div className="session">
+      <h1 className="session-heading">Session</h1>
+      <form onSubmit={handleSubmitForm} className="session-form">
+        <label htmlFor="email" className="label">Email ID</label>
         <input
           type="email"
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="input"
         />
         <br />
-        <label htmlFor="room">Room Number</label>
+        <label htmlFor="room" className="label">Room Number</label>
         <input
           type="text"
           id="room"
           value={room}
           onChange={(e) => setRoom(e.target.value)}
+          className="input"
         />
         <br />
-        <button type="submit">Join</button>
+        <button type="submit" className="join-btn">Join</button>
       </form>
     </div>
   );
