@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import { userData } from '../../../context/AuthContext';
+import ProfileAvatar from "./avatar-icon-images-4 (1).jpg"
 import "./style.scss";
 
 const Profile = () => {
@@ -11,8 +12,8 @@ const Profile = () => {
         <div className="img-name">
           <div className="profile-img">
             <img
-              src="src\assets\avatar-img.jpeg"
-              alt=""
+              src={ProfileAvatar}
+              alt="Profile Image"
             />
           </div>
           <div className="name">

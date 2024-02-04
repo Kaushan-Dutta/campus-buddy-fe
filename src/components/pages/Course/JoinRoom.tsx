@@ -111,24 +111,34 @@ const RoomPage: React.FC = () => {
 
   return (
     <div className="w-full text-center ">
-      <h1>Room Page</h1>
-      <h4>{remoteSocketId ? "Connected" : "No one in the room"}</h4>
-      {remoteSocketId && <button onClick={handleCallUser}>CALL</button>}
-      <div className="flex flex-row justify-center ">
-        {myStream && (
-            <>
-            <h1 className="text-center">My Stream</h1>
-            <ReactPlayer
-                playing
-                muted
-                height="500px"
-                width="500px"
-                url={myStream} // Use the MediaStream directly, no need for URL.createObjectURL
-                />
-            </>
+      <h1 className="room-heading">Room Page</h1>
+      <div className={myStream ? 'room-content-opened':'room-content'}>
+        {!myStream && (
+          <>
+          <h1 className="status">{remoteSocketId ? "Connected" : "No one in the room"}</h1>
+          {remoteSocketId && <button onClick={handleCallUser} className="call-btn">CALL</button>}
+          </>
         )}
+        
+        <div className="player">
+          {myStream && (
+              <div className="room-opened">
+                <div className="room-status-opened">
+                  <h1 className="status">{remoteSocketId ? "Connected" : "No one in the room"}</h1>
+                  <button className="end-btn">End Stream</button>
+                </div>
+                <div className="react-player">
+                  <ReactPlayer
+                    playing
+                    muted
+                    height="500px"
+                    url={myStream} // Use the MediaStream directly, no need for URL.createObjectURL
+                  />
+                </div>
+              </div>
+          )}
+        </div>
       </div>
-      
     </div>
   );
 };

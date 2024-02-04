@@ -22,14 +22,15 @@
         padding-top: 12px;
         font-size: 24px;
         margin-right: 10px;
+        padding-left: 11px;
         color: darkblue;
     }
     .arrow-icon{
-        //background-color: ;
+        background-color: darkblue;
         margin-right: 0;
         border: none;
         cursor: pointer;
-        color: darkblue;
+        color: white !important;
     }
     .subject{
         display: flex;
@@ -39,7 +40,7 @@
         .sub-name{
             font-size: 20px;
             font-weight: 500;
-            margin: 5px 0 8px;
+            margin: 0 !important;
         }
         .sub-code{
             font-size: 14px;

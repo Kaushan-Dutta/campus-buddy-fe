@@ -115,3 +115,58 @@
         }
     }
 }
+
+//Join Room
+.room-heading{
+    margin: 30px auto 20px;
+    color: blueviolet;
+    font-size: 26px;
+    font-weight: 600;
+}
+.room-content{
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(137, 43, 226, 0.291);
+    min-height: 400px;
+    padding: 176px;
+    .status{
+        font-size: 24px;
+        font-weight: 600;
+        margin:auto;
+        color: rgb(6, 63, 6);
+    }
+    .call-btn{
+        background-color: rgb(6, 63, 6);
+        padding: 8px 15px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 40px;
+        border-radius: 5px;
+    }
+}
+.room-content-opened{
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(137, 43, 226, 0.291);
+    min-height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .status{
+        font-size: 24px;
+        font-weight: 600;
+        margin:auto;
+        color: rgb(6, 63, 6);
+    }
+    .end-btn{
+        background-color: rgb(222, 6, 6);
+        padding: 8px 15px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 30px auto;
+        border-radius: 5px;
+    }
+    
+}
