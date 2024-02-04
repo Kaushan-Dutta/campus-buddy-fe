@@ -21,7 +21,7 @@ const App = () => {
   const {user}=userData();
 
   return (
-    <div className="bg-light min-h-screen min-w-full primary-container">
+    <div className=" min-h-screen min-w-full primary-container">
       <Navbar/>
       <Routes>
         <Route element={<AuthWrapper/>}>
